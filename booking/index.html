@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Now | Hotel Shree Krishna — Save 15% Direct Booking Keonjhar</title>
+  <meta name="description" content="Book direct at Hotel Shree Krishna, Keonjhar. Best price guarantee, free breakfast, instant WhatsApp confirmation. 4.6★ rated 3-star hotel.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://YOUR-USERNAME.github.io/keonjhar-hotel/booking/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="booking.css">
+</head>
+<body data-page="booking" class="booking-page">
+
+  <a href="#main-content" class="skip-link" data-i18n="nav.skip">Skip to main content</a>
+  <div id="site-header-slot"></div>
+
+  <!-- Sticky booking bar (mobile) -->
+  <div class="sticky-book-bar" id="sticky-book-bar">
+    <span class="sticky-price">From <strong>₹1,499</strong>/night</span>
+    <a href="#booking-form" class="btn btn-primary btn-sm" data-i18n="cta.bookNow">Book Now</a>
+  </div>
+
+  <main id="main-content">
+
+    <!-- Conversion hero -->
+    <section class="book-hero">
+      <div class="book-hero-bg">
+        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1920&q=80" alt="Deluxe room" width="1920" height="1080">
+        <div class="book-hero-overlay"></div>
+      </div>
+      <div class="container book-hero-content">
+        <p class="book-urgency-badge" data-i18n="book.hero.badge">🔥 Direct Booking — Save 15% Today</p>
+        <h1 data-i18n="book.hero.title">Book Your Stay at Keonjhar's Most Trusted Hotel</h1>
+        <p class="book-hero-sub" data-i18n="book.hero.subtitle">No middleman. No hidden fees. Instant confirmation.</p>
+
+        <!-- Trust badges row -->
+        <div class="trust-badges-row">
+          <div class="trust-badge-lg"><span class="tb-icon">★</span><span data-i18n="book.trust.rating">4.6★ Guest Rating</span></div>
+          <div class="trust-badge-lg"><span class="tb-icon">💬</span><span data-i18n="book.trust.reviews">128+ Verified Reviews</span></div>
+          <div class="trust-badge-lg"><span class="tb-icon">✓</span><span data-i18n="book.trust.guarantee">Best Price Guarantee</span></div>
+          <div class="trust-badge-lg"><span class="tb-icon">🔒</span><span data-i18n="book.trust.secure">Secure Direct Booking</span></div>
+          <div class="trust-badge-lg"><span class="tb-icon">🍳</span><span data-i18n="book.trust.breakfast">Free Breakfast</span></div>
+          <div class="trust-badge-lg"><span class="tb-icon">↩</span><span data-i18n="book.trust.cancel">Flexible Cancellation</span></div>
+        </div>
+
+        <!-- Urgency + social proof -->
+        <div class="social-proof-bar">
+          <p class="urgency-text" data-i18n="book.urgency">⚡ Only 3 Deluxe AC rooms left for this weekend!</p>
+          <p class="social-text" data-i18n="book.social">12 guests booked in the last 24 hours</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main booking layout -->
+    <section class="book-main section">
+      <div class="container book-layout">
+
+        <!-- Left: benefits + room picker -->
+        <div class="book-sidebar">
+          <div class="benefits-card">
+            <h2 data-i18n="book.benefits.title">Why Book Direct With Us?</h2>
+            <ul class="benefits-list">
+              <li data-i18n="book.benefits.1">Lowest price — guaranteed</li>
+              <li data-i18n="book.benefits.2">Complimentary breakfast</li>
+              <li data-i18n="book.benefits.3">Free room upgrade (subject to availability)</li>
+              <li data-i18n="book.benefits.4">Priority early check-in</li>
+              <li data-i18n="book.benefits.5">Personal concierge via WhatsApp</li>
+            </ul>
+          </div>
+
+          <div class="room-picker" id="room-picker">
+            <h3>Select Room Type</h3>
+            <label class="room-option">
+              <input type="radio" name="room_type" value="standard" data-price="1499">
+              <span class="room-option-inner">
+                <strong>Standard Room</strong>
+                <span>₹1,499/night</span>
+              </span>
+            </label>
+            <label class="room-option selected">
+              <input type="radio" name="room_type" value="deluxe" data-price="2499" checked>
+              <span class="room-option-inner">
+                <strong>Deluxe AC Room</strong>
+                <span>₹2,499/night · Most Popular</span>
+              </span>
+            </label>
+            <label class="room-option">
+              <input type="radio" name="room_type" value="family" data-price="3499">
+              <span class="room-option-inner">
+                <strong>Family Room</strong>
+                <span>₹3,499/night</span>
+              </span>
+            </label>
+            <label class="room-option">
+              <input type="radio" name="room_type" value="suite" data-price="4499">
+              <span class="room-option-inner">
+                <strong>Executive Suite</strong>
+                <span>₹4,499/night</span>
+              </span>
+            </label>
+          </div>
+
+          <!-- Live price summary -->
+          <div class="price-summary" id="price-summary">
+            <div class="price-row"><span>Room rate</span><span id="price-nightly">₹2,499</span></div>
+            <div class="price-row discount"><span>Direct booking discount (15%)</span><span id="price-discount">-₹375</span></div>
+            <div class="price-row total"><span>Estimated total/night</span><strong id="price-total">₹2,124</strong></div>
+            <p class="price-note">*Final price confirmed on booking. GST extra as applicable.</p>
+          </div>
+        </div>
+
+        <!-- Right: booking form -->
+        <div class="book-form-wrap">
+          <form class="contact-form booking-form" id="booking-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+            <h2 data-i18n="book.form.title">Reserve Your Room</h2>
+            <p class="form-desc" data-i18n="book.form.subtitle">Complete the form — we confirm within 30 minutes</p>
+
+            <input type="hidden" name="form_type" value="booking">
+            <input type="hidden" name="room_type" id="hidden-room" value="deluxe">
+            <input type="hidden" name="estimated_price" id="hidden-price" value="2124">
+
+            <div class="form-group">
+              <label for="name" data-i18n="contact.name">Full Name *</label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your full name">
+              <span class="form-error" id="name-error"></span>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="+91 XXXXX XXXXX">
+                <span class="form-error" id="phone-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+                <span class="form-error" id="email-error"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="checkin" data-i18n="contact.checkin">Check-in *</label>
+                <input type="date" id="checkin" name="checkin" required>
+              </div>
+              <div class="form-group">
+                <label for="checkout" data-i18n="contact.checkout">Check-out *</label>
+                <input type="date" id="checkout" name="checkout" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="guests" data-i18n="contact.guests">Number of Guests</label>
+              <select id="guests" name="guests">
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5+">5+ Guests</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Special Requests</label>
+              <textarea id="message" name="message" rows="3" placeholder="Early check-in, extra bed, airport pickup..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full btn-pulse" id="form-submit">
+              <span class="btn-text" data-i18n="book.cta.primary">Confirm My Booking</span>
+              <span class="btn-loading" hidden data-i18n="contact.sending">Sending...</span>
+            </button>
+
+            <div class="form-success" id="form-success" hidden role="alert">
+              ✅ Booking request received! We'll confirm via phone/WhatsApp within 30 minutes.
+            </div>
+
+            <div class="alt-booking">
+              <p>Prefer instant booking?</p>
+              <a href="https://wa.me/919437012345?text=I%20want%20to%20book%20at%20Hotel%20Tarini%20Regency" class="btn btn-whatsapp btn-full" target="_blank" rel="noopener" data-i18n="book.cta.whatsapp">Book via WhatsApp (Fastest)</a>
+              <a href="tel:+919437012345" class="btn btn-secondary btn-full" data-i18n="book.cta.call">Call to Book</a>
+            </div>
+          </form>
+
+          <!-- Trust seals -->
+          <div class="trust-seals">
+            <div class="seal"><span>🔒</span><small>SSL Secured</small></div>
+            <div class="seal"><span>✓</span><small>Verified Hotel</small></div>
+            <div class="seal"><span>★</span><small>3-Star Rated</small></div>
+            <div class="seal"><span>💯</span><small>Best Price</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mini testimonials for trust -->
+    <section class="book-testimonials">
+      <div class="container">
+        <div class="mini-reviews">
+          <blockquote>"Best family hotel in Keonjhar — clean, affordable, great food!"<cite>— Priya P., Bhubaneswar</cite></blockquote>
+          <blockquote>"Booked direct and got free breakfast + early check-in. Highly recommend!"<cite>— Amit S., Joda</cite></blockquote>
+          <blockquote>"Perfect base for Maa Tarini pilgrimage. Staff was incredibly helpful."<cite>— Smita D., Cuttack</cite></blockquote>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer-slot"></div>
+  <div id="fab-slot"></div>
+
+  <script src="../js/config.js"></script>
+  <script src="../locales/translations.js"></script>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/layout.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="booking.js"></script>
+</body>
+</html>

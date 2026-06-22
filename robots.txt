@@ -1,0 +1,7 @@
+# Robots.txt for Hotel Shree Krishna
+# Replace YOUR-USERNAME with your GitHub username before deploying.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://YOUR-USERNAME.github.io/keonjhar-hotel/sitemap.xml
