@@ -4,4 +4,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR-USERNAME.github.io/keonjhar-hotel/sitemap.xml
+Sitemap: https://YOUR-USERNAME.github.io/hotel-shree-krishna/sitemap.xml

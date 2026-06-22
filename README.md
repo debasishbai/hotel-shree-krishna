@@ -14,7 +14,7 @@ Production-ready hotel portfolio with **three deployable versions**:
 ## Project Structure
 
 ```
-keonjhar-hotel/
+hotel-shree-krishna/
 ├── index.html              # Multi-page home
 ├── about.html
 ├── rooms.html
@@ -72,9 +72,9 @@ keonjhar-hotel/
 
 ### Deploy steps
 
-1. Push to GitHub repository `keonjhar-hotel`
+1. Push to GitHub repository `hotel-shree-krishna`
 2. Enable **GitHub Pages** → Source: `main` branch → `/ (root)`
-3. Site live at: `https://YOUR-USERNAME.github.io/keonjhar-hotel/`
+3. Site live at: `https://YOUR-USERNAME.github.io/hotel-shree-krishna/`
 4. Submit sitemap to Google Search Console
 
 ---
@@ -151,7 +151,7 @@ const HOTEL_CONFIG = {
   whatsapp: '919437012345',
   email: 'info@hoteltariniregency.in',
   formspreeEndpoint: 'https://formspree.io/f/YOUR_FORM_ID',
-  siteUrl: 'https://YOUR-USERNAME.github.io/keonjhar-hotel',
+  siteUrl: 'https://YOUR-USERNAME.github.io/hotel-shree-krishna',
   directBookingDiscount: '15'
 };
 ```
@@ -169,7 +169,7 @@ Also update:
 ## Local Preview
 
 ```bash
-cd keonjhar-hotel
+cd hotel-shree-krishna
 python -m http.server 8000
 ```
 
@@ -200,7 +200,7 @@ Then: **Repository → Settings → Pages → Deploy from branch `main`**
 - Each page has unique `<title>` and `<meta description>`
 - `explore.html` targets: *Hotels Near Maa Tarini Temple*, *Hotels Near Khandadhar Waterfall*
 - `booking/` has highest sitemap priority (0.95) for conversion
-- Submit: `https://YOUR-USERNAME.github.io/keonjhar-hotel/sitemap.xml`
+- Submit: `https://YOUR-USERNAME.github.io/hotel-shree-krishna/sitemap.xml`
 
 ---
 

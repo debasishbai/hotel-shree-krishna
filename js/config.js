@@ -19,7 +19,7 @@ const HOTEL_CONFIG = {
     country: 'India'
   },
   formspreeEndpoint: 'https://formspree.io/f/YOUR_FORM_ID',
-  siteUrl: 'https://YOUR-USERNAME.github.io/keonjhar-hotel',
+  siteUrl: 'https://YOUR-USERNAME.github.io/hotel-shree-krishna',
   rating: '4.6',
   reviewCount: '128',
   yearsExperience: '15+',
