@@ -4,7 +4,7 @@
  */
 const HOTEL_CONFIG = {
   name: 'Hotel Shree Krishna',
-  shortName: 'Tarini Regency',
+  shortName: 'Hotel Shree Krishna',
   location: 'Keonjhar, Odisha',
   phone: '+919437012345',
   phoneDisplay: '+91 94370 12345',
