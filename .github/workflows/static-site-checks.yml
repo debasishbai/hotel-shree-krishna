@@ -1,0 +1,47 @@
+name: Static Site CI
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate static site
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Check JavaScript syntax
+        run: |
+          node --check script.js
+          for file in js/*.js locales/*.js booking/*.js; do
+            node --check "$file"
+          done
+
+      - name: Smoke test site routes
+        run: |
+          python3 -m http.server 8000 --bind 127.0.0.1 --directory . >/tmp/hotel-site.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+
+          for attempt in {1..10}; do
+            if curl --fail --silent --output /dev/null http://127.0.0.1:8000/; then
+              break
+            fi
+            sleep 1
+          done
+
+          for path in / /booking/ /contact.html; do
+            curl --fail --silent --show-error --output /dev/null "http://127.0.0.1:8000${path}"
+          done
