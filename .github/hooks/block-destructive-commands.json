@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "hooks": {
+    "preToolUse": [
+      {
+        "type": "command",
+        "matcher": "bash|powershell",
+        "bash": "if command -v python3 >/dev/null 2>&1; then python3 .github/hooks/block-destructive-commands.py; else printf '{}'; fi",
+        "powershell": "if (Get-Command python -ErrorAction SilentlyContinue) { python .github/hooks/block-destructive-commands.py } else { '{}' }",
+        "timeoutSec": 10
+      }
+    ]
+  }
+}
