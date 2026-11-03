@@ -1,0 +1,31 @@
+name: Copilot Setup Steps
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  copilot-setup-steps:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Start static project server
+        run: |
+          nohup python -m http.server 8000 --directory . >/tmp/hotel-shree-krishna.log 2>&1 &
+          sleep 2
+          curl -I http://localhost:8000
+
+      - name: Verify project files
+        run: |
+          echo "Project server is running on http://localhost:8000"
+          ls -la
