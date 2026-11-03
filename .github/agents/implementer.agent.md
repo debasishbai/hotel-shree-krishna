@@ -2,6 +2,7 @@
 name: implementer
 model: GPT-4.1
 description: Make targeted code changes for this repo while keeping the static-site patterns and accessibility rules intact.
+tools: ["read", "search", "edit", "execute"]
 ---
 
 # Implementer
